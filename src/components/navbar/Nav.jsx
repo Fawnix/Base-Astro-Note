@@ -14,14 +14,14 @@ export default function Nav({ posts }) {
     { name: "Contact", href: "/#contact" },
   ];
 
-  const extractInitials = (name) => {
-    const names = name.split(" ");
-    let initials = "";
-    names.forEach((name) => {
-      initials += name.charAt(0);
-    });
-    return initials;
-  };
+  // const extractInitials = (name) => {
+  //   const names = name.split(" ");
+  //   let initials = "";
+  //   names.forEach((name) => {
+  //     initials += name.charAt(0);
+  //   });
+  //   return initials;
+  // };
 
   return (
     <>
@@ -29,22 +29,14 @@ export default function Nav({ posts }) {
         <div className="w-full px-6 py-2 flex justify-between items-center">
           <a className="font-bold text-2xl lg:text-4xl" href="/#">
             <span className="text-secondary dark:text-dk-secondary">
-              {"</" + extractInitials(info.name) + ">"}
+              {/* {"</" + extractInitials(info.name) + ">"} */}
+              lyf-note
             </span>
           </a>
+          
 
           {/* Button for CV download */}
-          <a
-            href={info.cv}
-            download
-            className="px-4 py-2 border-2 rounded text-secondary dark:text-dk-secondary border-secondary dark:border-dk-secondary hover:bg-secondary dark:hover:bg-dk-secondary hover:text-primary dark:hover:text-primary cursor-pointer"
-          >
-            <i className="fas fa-download mr-2"></i>
-            <span className="hidden lg:inline-block font-medium">
-              Download CV
-            </span>
-            <span className="lg:hidden font-medium">CV</span>
-          </a>
+          
 
           <div className="inline-flex lg:hidden text-secondary dark:text-dk-secondary">
             <Hamburger
@@ -52,6 +44,7 @@ export default function Nav({ posts }) {
               isNavOpen={isNavOpen}
             />
           </div>
+          
           <div className="hidden lg:block">
             <ul className="inline-flex text-secondary dark:text-dk-secondary text-2xl font-normal">
               {navLinks.map((link, index) => (
@@ -69,6 +62,7 @@ export default function Nav({ posts }) {
                 <Search posts={posts} />
               </li>
             </ul>
+            
           </div>
         </div>
         <div

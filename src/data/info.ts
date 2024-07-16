@@ -1,53 +1,36 @@
 export const info = {
-  name: "Bart Simpson",
+  name: "lyf",
   brief_description:
-    "I'm a mischievous full stack developer with a knack for troublemaking.",
-  role: "Full Stack Developer",
+    "I am a curious front-end developer",
+  role: "front-end developer",
   picture: "/pic.png",
   picture_alt: "Bart Simpson",
-  location: "Springfield, USA",
+  location: "Guangdong Province",
   cv: "/resume.pdf",
 
   about: {
-    description: `I'm a full stack developer with a passion for causing a little chaos in web development.
+    description: `I'm a front-end developer with a passion for causing a little chaos in web development.
     I have a solid foundation in computer science, although I prefer skateboarding over studying.
-    I excel in building web applications using React, Node.js, and MongoDB.
-    I'm known for my sharp wit and quick thinking, traits that serve me well in coding and pranks alike.
-    Looking for a challenge? Let's create something memorable together.`,
+    I excel in building web applications using Vue, Node.js, and MYSQL.
+    I'm known for my sharp wit and quick thinking, traits that serve me well in coding and pranks alike.`,
     education: [
       {
         title: "Self-Taught Developer Extraordinaire",
-        date: "2000 - Present",
-        location: "Springfield Elementary School of Hard Knocks",
-        gpa: "4.0 (A+ in Pranks)",
-        thesis: "The Art of Subverting Expectations: A Practical Guide",
+        date: "2021 - Present",
+        location: "Software Engineering Institute of Guangzhou",
       },
     ],
     experience: [
       {
         title: "Frontend Developer",
-        date: "2015 - Present",
-        location: "Krusty Burger Web Dev",
+        date: "2021 - Present",
+        location: "Guangdong Province",
         description:
           "Crafted interactive web experiences using React and Redux. Often multitasked between coding and avoiding Principal Skinner.",
       },
-      {
-        title: "Backend Bandit",
-        date: "2013 - 2015",
-        location: "Comic Book Guy's Software Emporium",
-        description:
-          "Masterminded backend solutions using Node.js and MongoDB. Surprisingly good at debugging, considering my history of causing bugs.",
-      },
-      {
-        title: "Junior Hacker",
-        date: "2010 - 2013",
-        location: "Springfield Elementary Cyber Club",
-        description:
-          "Pioneered early web exploits, leading the club in daring coding escapades. Was disciplined for hacking the school's grading system.",
-      },
     ],
 
-    skills: ["JavaScript", "React", "Node.js", "MongoDB", "Prank Mastery"], // not used yet
+    skills: ["JavaScript", "Vue", "Node.js", "MYSQL"], // not used yet
   },
 
   projects: [

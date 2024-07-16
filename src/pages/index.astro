@@ -20,8 +20,8 @@ const allPosts = await Astro.glob("./posts/*.md");
         <Image
           src={info.picture}
           alt={info.picture_alt}
-          width={200}
-          height={200}
+          width={150}
+          height={150}
           class="lg:h-96 lg:w-96 h-40 w-40 rounded-full object-fill object-center space-x-8"
         />
       </div>
@@ -38,7 +38,19 @@ const allPosts = await Astro.glob("./posts/*.md");
             >{info.location}</span
           >
         </p>
+        
       </div>
+      <a
+            href={info.cv}
+            download
+            class="px-1 py-2 border-2 rounded text-secondary dark:text-dk-secondary border-secondary dark:border-dk-secondary hover:bg-secondary dark:hover:bg-dk-secondary hover:text-primary dark:hover:text-primary cursor-pointer"
+          >
+            <i class="fas fa-download mr-2"></i>
+            <span class="hidden lg:inline-block font-thin">
+              Download CV
+            </span>
+            <span class="lg:hidden font-thin">CV</span>
+          </a>
     </div>
   </section>
   <section class="lg:m-0
