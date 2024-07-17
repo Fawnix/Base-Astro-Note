@@ -17,7 +17,8 @@ export const info = {
         title: "Frontend Developer",
         date: "2021 - Present",
         location: "Guangdong Province",
-        description: "通过b站或者各大博客网站进行技术积累和学习",
+        description:
+          "通过b站或者各大博客网站进行技术积累和学习并在前端方面有两段实习经验",
       },
     ],
     skills: ["JavaScript", "Vue", "Node.js", "MYSQL"], // not used yet
@@ -42,7 +43,7 @@ export const info = {
       // link: "https://github.com/bartsimpsonfake/skate-shop",
       tech: ["Vue2", "axios"],
       img_alt: "画展网站",
-      img_path: "comics.png",
+      img_path: "/comics.png",
     },
     {
       title: "特产宣传销售小程序",
@@ -52,7 +53,7 @@ export const info = {
       // link: "https://github.com/bartsimpsonfake/comic-club",
       tech: ["原生微信小程序"],
       img_alt: "特产宣传销售小程序",
-      img_path: "shop.png",
+      img_path: "/shop.png",
     },
   ],
 
