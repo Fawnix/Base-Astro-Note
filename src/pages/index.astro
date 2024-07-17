@@ -47,15 +47,13 @@ const allPosts = await Astro.glob("./posts/*.md");
           >
             <i class="fas fa-download mr-2"></i>
             <span class="hidden lg:inline-block font-thin">
-              Download CV
+              下载 简历
             </span>
-            <span class="lg:hidden font-thin">CV</span>
+            <span class="lg:hidden font-thin">简历</span>
           </a>
     </div>
   </section>
-  <section class="lg:m-0
-        my-20
-        mx-2" id="about">
+  <section class="lg:h-screen lg:m-0 my-20 flex-col flex justify-center w-full" id="about">
     <About about={info.about} client:visible />
   </section>
 
