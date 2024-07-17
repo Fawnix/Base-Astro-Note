@@ -1,11 +1,11 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
-// import Post from "../components/post_section/Post.astro";
+import Post from "../components/post_section/Post.astro";
 
-const toolUsage = await Astro.glob("../pages/posts/tool_usage/*.md");
+const allPosts = await Astro.glob("../pages/posts/*.md");
 
 // Reorder allPosts by date
-toolUsage.sort((a, b) => {
+allPosts.sort((a, b) => {
   const dateA = new Date(a.frontmatter.date);
   const dateB = new Date(b.frontmatter.date);
   return dateB.getTime() - dateA.getTime();
@@ -18,13 +18,12 @@ const title = "Posts";
   <div
     class="grid gap-8 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 p-4 md:p-2 xl:p-5 mt-24"
   >
-    <!-- {
+    {
       allPosts.map((post) => (
         <div class="mb-4">
           <Post post={post} />
         </div>
       ))
-    } -->
-      1111
+    }
   </div>
 </BaseLayout>

@@ -21,24 +21,6 @@ export default function Contact({ contact, size }: ContactProps) {
       link: contact.github,
       link_alt: "GitHub",
     },
-    {
-      name: "linkedin",
-      icon: "fab fa-linkedin",
-      link: contact.linkedin,
-      link_alt: "LinkedIn",
-    },
-    {
-      name: "twitter",
-      icon: "fab fa-x-twitter",
-      link: contact.twitter,
-      link_alt: "Twitter",
-    },
-    {
-      name: "rss",
-      icon: "fas fa-rss",
-      link: "/rss.xml",
-      link_alt: "RSS Feed",
-    },
   ];
 
   return (

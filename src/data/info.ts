@@ -26,7 +26,7 @@ export const info = {
 
   projects: [
     {
-      title: "Bart's Prank Portfolio",
+      title: "画展网站",
       date: "2024",
       description:
         "An interactive portfolio website showcasing my mischievous coding projects.",
@@ -58,9 +58,7 @@ export const info = {
   ],
 
   contact: {
-    email: "bart@thesimpsons.com",
-    linkedin: "https://www.linkedin.com/in/bartsimpsonfake",
-    github: "https://www.github.com/gio-del",
-    twitter: "https://www.twitter.com/bartsimpsonfake",
+    email: "l.yfeng@qq.com",
+    github: "https://github.com/Fawnix",
   },
 };
