@@ -2,7 +2,7 @@
 title: "代理"
 date: "2024-07-15"
 
-layout: ../../layouts/PostLayout.astro
+layout: ../../../layouts/PostLayout.astro
 description: "在这篇文章中可以了解到什么是代理!"
 ---
 
@@ -14,12 +14,12 @@ A 负责开发 js，B 负责开发 aspx，aspx 的返回数据格式已经确定
 
 Fiddler 是用 Node 实现的类似 Fiddler 的 web 调试代理工具，支持查看和修改 HTTP(S)、Websocket 请求响应数据，且支持跨平台(Windows、Mac、Linux 等可以安装 Node 的操作系统)。
 传说 Fiddler 是一个坏人，他喜欢在 C （客户端）和 S （服务器）之间做一些手脚，但是这样并不影响他的出名。请看下面的小卡片：
-![Alt text](../../../public/proxy/代理-image0.png)
+![Alt text](/public/proxy/代理-image0.png)
 
 ## Fiddler 的工作原理
 
 从下面的图可以看到，他主要是在 WinINet API 和服务器之间做一个代理，通过定制这个代理的功能来实现上述技能。
-![Alt text](../../../public/proxy/代理-image1.png)
+![Alt text](/public/proxy/代理-image1.png)
 （图片引自 http://msdn.microsoft.com/en-us/library/Bb250446.aspx）
 
 ## whistle 使用
@@ -36,7 +36,7 @@ npm i -g whistle
 w2 start
 ```
 
-![Alt text](../../../public/proxy/代理-image2.png)
+![Alt text](/public/proxy/代理-image2.png)
 到这里其实 whistle 就安装启动完毕了，直接访问http://127.0.0.1:8899 就可以看到工具界面，里面可以配置一些转发规则。
 
 最后还需要下载个浏览器代理工具，浏览器需要把请求设置代理指向 whistle Server 地址 127.0.0.1:8899，chrome 下推荐安装使用 proxyOmega 插件来提高切换效率，这样就可以一键切换代理。
@@ -52,7 +52,7 @@ w2 start
 - Values——存放 KeyValue 的系统
 - Plugins——插件列表页面
 
-![Alt text](../../../public/proxy/代理-image3.png)
+![Alt text](/public/proxy/代理-image3.png)
 
 #### 配置浏览器代理 proxyOmega
 
@@ -61,7 +61,7 @@ w2 start
 3. 代理协议 HTTP
 4. 代理服务器: 127.0.0.1
 5. 代理端口: 8899 把浏览器代理切换到 whistle 就可以进入下一步了。
-   ![Alt text](../../../public/proxy/代理-image4.png)
+   ![Alt text](/public/proxy/代理-image4.png)
 
 #### 开始使用，打开网页，开始配置
 
@@ -72,11 +72,11 @@ https://www.baidu.com/img/PCtm_d9c8750bed0b3c7d089fa7d55720d6cf.png  /Users/lyf/
 ```
 
 上面的规则是：这里我把百度的 LOGO 换成我的本地图片了
-![Alt text](../../../public/proxy/代理-image5.png)
+![Alt text](/public/proxy/代理-image5.png)
 在工具的请求列表也能看到被换的 RUL：
-![Alt text](../../../public/proxy/代理-image6.png)
+![Alt text](/public/proxy/代理-image6.png)
 浏览器突然走不通代理？试试重启浏览器/电脑/把这个勾上，把网址从 https 改成 http 试试
-![Alt text](../../../public/proxy/代理-image7.png)
+![Alt text](/public/proxy/代理-image7.png)
 
 ### 总结
 

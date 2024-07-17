@@ -13,7 +13,7 @@ export default function ProjectCard(props: ProjectCardProps) {
     <div className="flex flex-col bg-primary dark:bg-dk-primary rounded-lg">
       <div className="flex-shrink-0">
         <a
-          href={project.link}
+          // href={project.link}
           rel="noreferrer"
           aria-label={project.img_alt + ", click to open the project page"}
         >
@@ -30,7 +30,7 @@ export default function ProjectCard(props: ProjectCardProps) {
         <div className="flex-1">
           <p className="text-sm font-medium text-text dark:text-dk-text">
             <a
-              href={project.link}
+              // href={project.link}
               rel="noreferrer"
               className="hover:underline"
               aria-label="Title of the project, click to open the project page"
@@ -39,12 +39,12 @@ export default function ProjectCard(props: ProjectCardProps) {
             </a>
           </p>
           <a
-            href={project.link}
+            // href={project.link}
             rel="noreferrer"
             className="block mt-2"
             aria-label="Description of the project, click to open the project page"
           >
-            <p className="text-xl font-semibold text-gray-900">
+            <p className="text-xl font-semibold text-gray-900 whitespace-pre-wrap ">
               {project.description}
             </p>
           </a>

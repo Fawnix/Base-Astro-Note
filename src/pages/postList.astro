@@ -1,0 +1,40 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+const title = "PostsList";
+---
+
+<!-- 整个页面 -->
+<BaseLayout title={title}>
+  <div
+    class="grid gap-8 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 p-4 md:p-2 xl:p-5 mt-24"
+  >
+    <div
+      class="relative bg-primary rounded-lg shadow-sm dark:shadow-dk-secondary dark:bg-dk-primary transform transition duration-500 hover:scale-105"
+    >
+      <div class="px-4 pb-3 md:h-40 h-36">
+        <div>
+          <a href="./posts/tool_usage/tools">
+            <h5
+              class="text-xl font-semibold tracking-tight hover:text-secondary dark:hover:text-dk-secondary text-text dark:text-dk-text"
+            >
+              工具使用
+            </h5>
+          </a>
+
+          <p class="antialiased text-text dark:text-dk-text text-sm break-keep">
+            在这里面的文章你可以学到更多工具使用的知识和小技巧
+          </p>
+          <div class="flex items-center justify-between mt-4">
+            <div class="flex items-center flex-row justify-between w-full">
+              <a
+                href="./posts/tool_usage/tools"
+                class="text-sm font-semibold text-text dark:text-dk-text hover:underline"
+                >Read more</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</BaseLayout>

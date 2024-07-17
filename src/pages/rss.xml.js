@@ -4,7 +4,6 @@ import sanitizeHtml from 'sanitize-html';
 export async function GET(context) {
     const postImportResult = import.meta.glob('./**/**/*.md', { eager: true });
     const posts = Object.values(postImportResult);
-
     return rss({
         title: 'Portfolio',
         description: 'A portfolio template for Astro',

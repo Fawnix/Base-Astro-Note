@@ -1,11 +1,8 @@
-# 博客地址
- https://lyf-notes.netlify.app
-
 ## 1.1. Table of Contents
 
 - [博客地址](#博客地址)
   - [1.1. Table of Contents](#11-table-of-contents)
-  - [1.2. Features :open\_hands:](#12-features-open_hands)
+  - [1.2. Features :open_hands:](#12-features-open_hands)
   - [1.3. What's next? :rocket:](#13-whats-next-rocket)
   - [1.4. How to use this template :toolbox:](#14-how-to-use-this-template-toolbox)
     - [1.4.1. Notes about the contact section :email:](#141-notes-about-the-contact-section-email)
@@ -13,9 +10,9 @@
     - [1.4.3. Notes about SEO :robot:](#143-notes-about-seo-robot)
     - [1.4.4. Notes about styles :art:](#144-notes-about-styles-art)
   - [1.5. Project Structure :rocket:](#15-project-structure-rocket)
-  - [1.6. Commands :genie\_man:](#16-commands-genie_man)
-  - [1.7. Tools Used :hammer\_and\_wrench:](#17-tools-used-hammer_and_wrench)
-  - [1.8. Contributing :building\_construction:](#18-contributing-building_construction)
+  - [1.6. Commands :genie_man:](#16-commands-genie_man)
+  - [1.7. Tools Used :hammer_and_wrench:](#17-tools-used-hammer_and_wrench)
+  - [1.8. Contributing :building_construction:](#18-contributing-building_construction)
   - [1.9. License :memo:](#19-license-memo)
 
 ## 1.2. Features :open_hands:

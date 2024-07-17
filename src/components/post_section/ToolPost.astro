@@ -6,26 +6,11 @@ const { post } = Astro.props;
 const { url } = post;
 const { title, description, img_path, img_alt, date } = post.frontmatter;
 ---
+
 <!-- 卡片 -->
 <div
   class="relative bg-primary rounded-lg shadow-sm dark:shadow-dk-secondary dark:bg-dk-primary transform transition duration-500 hover:scale-105"
 >
-  <div class="p-2 flex justify-center">
-    {
-      img_path && (
-        <a href={url}>
-          {/* <Image
-            class="rounded-md w-full md:h-56 h-28 object-cover"
-            src={img_path}
-            alt={img_alt || title}
-            width={300}
-            height={200}
-          /> */}
-        </a>
-      )
-    }
-  </div>
-
   <div class="px-4 pb-3 md:h-40 h-36">
     <div>
       <a href={url}>
