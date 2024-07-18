@@ -17,7 +17,7 @@ const title = "Posts";
 <!-- 整个页面 -->
 <BaseLayout title={title}>
   <div
-    class="grid gap-8 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 p-4 md:p-2 xl:p-5 mt-24"
+    class="grid gap-8 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 p-4 md:p-2 xl:p-5 mt-24 relative"
   >
     {
       allPosts.map((post) => (
@@ -26,5 +26,11 @@ const title = "Posts";
         </div>
       ))
     }
+      <a
+        class="hover:text-accent dark:hover:text-dk-accent absolute top-0 right-0 text-secondary dark:text-dk-secondary"
+        href="/postList"
+      >
+        Read more categories</a
+      >
   </div>
 </BaseLayout>

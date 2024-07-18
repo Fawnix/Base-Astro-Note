@@ -38,11 +38,11 @@ const allPosts = await Astro.glob("./posts/tool_usage/*.md");
             >{info.location}</span
           >
         </p>
-        <a href="https://fawnix.github.io/lyf-notes/"
+        <a class="text-text dark:text-dk-text" href="https://fawnix.github.io/lyf-notes/"
           >图片访问不清晰或者加载缓慢点此可以访问我的另一博客网站</a
         >
       </div>
-      <a
+      <!-- <a
         href={info.cv}
         download
         class="px-1 py-2 border-2 rounded text-secondary dark:text-dk-secondary border-secondary dark:border-dk-secondary hover:bg-secondary dark:hover:bg-dk-secondary hover:text-primary dark:hover:text-primary cursor-pointer"
@@ -50,7 +50,7 @@ const allPosts = await Astro.glob("./posts/tool_usage/*.md");
         <i class="fas fa-download mr-2"></i>
         <span class="hidden lg:inline-block font-thin"> 下载 简历 </span>
         <span class="lg:hidden font-thin">简历</span>
-      </a>
+      </a> -->
     </div>
   </section>
   <section

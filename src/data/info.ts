@@ -5,7 +5,7 @@ export const info = {
   picture: "/pic.png",
   picture_alt: "Bart Simpson",
   location: "Guangdong Province",
-  cv: "/resume.pdf",
+  // cv: "/resume.pdf",
 
   about: {
     description: `I'm a front-end developer with a passion for causing a little chaos in web development.
