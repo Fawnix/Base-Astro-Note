@@ -17,23 +17,14 @@ const title = "Posts";
 <!-- 整个页面 -->
 <BaseLayout title={title}>
   <div
-    class="grid gap-8 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 p-4 md:p-2 xl:p-5 mt-24 relative"
+    class="grid gap-8 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 p-4 md:p-2 xl:p-5 mt-24"
   >
-  <div class="absolute top-0 right-0 text-secondary dark:text-dk-secondary">
-      <a class="hover:text-accent dark:hover:text-dk-accent" href="/postList">
-        Read more categories</a
-      ><span class="font-black mx-2">|</span>
-      <a class="hover:text-accent dark:hover:text-dk-accent" href="/posts">
-        Read more posts</a
-      >
-    </div>
     {
       allPosts.map((post) => (
-        <div class="mb-3">
+        <div class="mb-4">
           <ToolPost post={post} />
         </div>
       ))
     }
-    
   </div>
 </BaseLayout>

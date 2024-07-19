@@ -8,7 +8,7 @@ import Blog from "../components/post_section/Blog.astro";
 
 import { Image } from "astro:assets";
 
-const allPosts = await Astro.glob("./posts/tool_usage/*.md");
+const allPosts = await Astro.glob("./posts/**/*.md");
 ---
 
 <BaseLayout title="Home">
@@ -39,7 +39,7 @@ const allPosts = await Astro.glob("./posts/tool_usage/*.md");
           >
         </p>
         <a class="text-text dark:text-dk-text" href="https://fawnix.github.io/lyf-notes/"
-          >图片访问不清晰或者加载缓慢点此可以访问我的另一博客网站</a
+          >图片访问不清晰或者加载缓慢点此可以访问我的另一博客网站(已暂停维护)</a
         >
       </div>
       <!-- <a
