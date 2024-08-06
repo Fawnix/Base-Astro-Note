@@ -8,17 +8,14 @@ export const info = {
   // cv: "/resume.pdf",
 
   about: {
-    description: `I'm a front-end developer with a passion for causing a little chaos in web development.
-    I have a solid foundation in computer science, although I prefer skateboarding over studying.
-    I excel in building web applications using Vue, Node.js, and MYSQL.
-    I'm known for my sharp wit and quick thinking, traits that serve me well in coding and pranks alike.`,
+    description: `热衷于前端开发领域。擅长使用 Vue、Node.js 和 MYSQL 构建 Web 应用程序。`,
     experience: [
       {
-        title: "Frontend Developer",
-        date: "2021 - Present",
+        title: "前端开发",
+        date: "2024 - Present",
         location: "Guangdong Province",
         description:
-          "通过b站或者各大博客网站进行技术积累和学习并在前端方面有两段实习经验",
+          "通过b站或者各大博客网站进行技术积累和学习并在前端方面自2024年1月起至今有两段实习经验",
       },
     ],
     skills: ["JavaScript", "Vue", "Node.js", "MYSQL"], // not used yet
